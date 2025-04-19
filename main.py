@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt
 
 st.divider()
 
-with st.expander('click me to fill your information'):
+with st.expander('点击填写您的个人基本信息'):
     column1, column2, column3, column4 = st.columns([1,1,1,1])
     with column1:
         st.write('Demographic characteristic')
