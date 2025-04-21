@@ -92,7 +92,7 @@ if prediction_button:
         yiyu_explainer.expected_value, 
         yiyu_shap_values[0,:], 
         st.session_state['info'].columns.tolist(),
-        matplotlib=True,
+        matplotlib=False,
 
         )
     streamlit_shap.st_shap(shap_fig)
