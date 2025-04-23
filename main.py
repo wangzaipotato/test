@@ -53,12 +53,12 @@ with st.expander('点击填写您的个人基本信息'):
         met_ca = st.selectbox('身体活动强度', options=['Inactive',  'active', 'highly active'])
         sleep = st.selectbox('睡眠时间', ['<6h', '6-8h', '>8h'])
         wusleep = st.selectbox('午睡 时间', ['无', '<30分钟', '30-90分钟', '>90分钟'])
-        drinking = st.selectbox('饮酒情况', ['No ','<1 month/次', '>1 month/次'])  
+        drinking = st.selectbox('饮酒情况', ['No drinking','drinking<1', 'drinking>1'])  
         smoking = st.selectbox('吸烟情况', ['No smoking', 'Smoking'])  
         IADL = st.selectbox('日常活动能力', ['No', 'Yes'])  
         BADL = st.selectbox('基本生活活动能力', ['No', 'Yes'])  
-        satification = st.selectbox('生活满意度', ['不满意', '一般', '良好'])  
-        self_health = st.selectbox('自评健康状况', ['差', '一般', '良好'])  
+        satification = st.selectbox('生活满意度', ['差', '良', '好'])  
+        self_health = st.selectbox('自评健康状况', ['差', '良', '好'])  
 
 prediction_button = st.button('预测抑郁风险')
 
